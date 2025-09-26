@@ -375,20 +375,20 @@
   \end{longtable}
 }
 
-% Render an experience in the education environment
+% Render an educations in the education environment
 % Usage: 
-% \experience
+% \education
 %  {<End date>}      {<Title>}{<Enterprise>}{<Country>}
 %  {<Start date}     {
-%                      <Experience description (Could be a list)>
+%                      <educations description (Could be a list)>
 %                    }
 %                    {<Technology list>}
-\newcommand\education[7]{
+\newcommand\education[6]{
   \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*
-                 & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
+                 %& \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
 
 % Render a consultant experience in the experiences environment
