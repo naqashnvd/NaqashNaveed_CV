@@ -3,16 +3,16 @@ name: Build CV PDF
 on:
   push:
     branches: [ main ]
+    tags: [ 'v*' ]
   pull_request:
     branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: danteev/texlive:latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install TeX Live
-        run: sudo apt-get update && sudo apt-get install -y texlive-full make
       - name: Build PDF
         run: make
       - name: Upload PDF artifact
@@ -20,3 +20,10 @@ jobs:
         with:
           name: NaqashNaveed_CV.pdf
           path: NaqashNaveed_CV.pdf
+      - name: Create Release and Upload PDF
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: NaqashNaveed_CV.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
