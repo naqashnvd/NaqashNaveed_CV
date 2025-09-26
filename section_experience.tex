@@ -1,0 +1,159 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%Section: Work Experience at the top
+\sectionTitle{Professional Experience}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+
+\experience
+    {June 2025}   {Master Thesis Student}{Infineon Technologies AG}{Munich, Germany}
+    {December 2025} {
+    \begin{itemize}
+    \item Gained in-depth knowledge of control strategies, power converters and PSoC control MCU.
+    \item Implemented firmware (C) for peak current mode control (PCMC) strategy for dual active bridge (DAB) topology on PSoC control MCU.
+    \item Validated PCMC using PLECS and RT Box Hardware-in-the-Loop (HIL), and currently working on validation with DAB hardware.
+    \item Hand's on experience with ModusToolbox and device configurator. 
+    \end{itemize}
+    }
+    {PCMC, DAB, C, MCU, HIL, PLECS, RT-BOX, ARM, ModusToolbox}
+  \emptySeparator
+
+
+\experience
+    {June 2024}   {Working Student: Software Engineer}{Infineon Technologies AG}{Munich, Germany}
+    {May 2025} {
+    \begin{itemize}
+ \item Developed chaiTea Based Tests for PSoC Control MCU.
+ \item Developed C-based unit tests for power conversion libraries using Unity, Ceedling, and CMock.
+ \item Implemented C-based fuzz tests with AFL++ fuzzers to enhance software robustness.
+ \item Integrated Docker-based test environments, optimizing execution and debugging workflows for C-based tests.
+ \item Designed Simulink-based tests for power conversion libraries using Simulink Test Manager.
+ \item Managed CI\textbackslash CD pipeline and improved test documentation in Confluence, TM4J, and Jira, ensuring traceability of test specifications.
+    \end{itemize}
+    }
+    {C, Simulink, MATLAB, Git, Jira, CI\textbackslash CD, ARM, Docker, Unity, Ceedling, CMock, AFL++}
+  \emptySeparator
+
+\experience
+    {October 2024}   {Internship: CVA6 Memory Encryption}{Technical University of Munich (TUM)}{Munich, Germany}
+    {April 2025} {
+    \begin{itemize}
+\item  Developed RTL (System Verilog) for memory encryption modules for Culsans-CVA6 (RISC-V-based architecture), integrating ASCON encryption between the LLC and DRAM.
+\item  Worked on cache and memory hierarchy analysis, including eviction policies and cache line.
+\item  Worked on simulation environments for CVA6 multicore, enabling OpenOCD-based JTAG simulation.
+\item  Created and improved Makefiles and Python scripts.
+\item  CoreMark benchmarks to validate the design.
+    \end{itemize}
+    }
+    {System Verilog, RISC-V, make, python, Modelsim, OpenOCD}
+  \emptySeparator
+
+
+% \experience
+%     {January 2024}   {Working Student: Embedded/Electronics}{EcoG GmbH}{Munich, Germany}
+%     {May 2024} {
+%     \begin{itemize}
+%  \item  Assisted in developing, validating, and testing embedded systems and electronics hardware.
+%  \item  Contributed to circuit diagram design, and understanding of electronic components.
+%  \item  Conducted soldering tasks and supported prototype testing activities.
+%  \item  Analyzed field returns, conducted software and hardware testing, performed root cause analysis, and documented findings.
+%     \end{itemize}
+%     }
+%     {Python, Altium}
+%   \emptySeparator
+
+
+  \experience
+  {February 2021}   {System Design Engineer}{Signatics pvt ltd}{Pakistan}
+  {October 2023} {
+  \begin{itemize}
+    \item \textbf{Signal Monitoring:} Design and implementation (Verilog, VHDL, C) of high-performance signal processing applications on a custom hardware platform (Software Defined Radio (SDR)) featuring high-speed ADCs and Xilinx Zynq Ultrascale+ (FPGA, ARM) with a two-stage superheterodyne RF front-end. Developed a real-time spectrum analyzer (30 MHz–6 GHz sweep, 500 MHz bandwidth, 1 μs time resolution) with features including persistence, peak hold, waterfall, and multi-channel channelizers. Enabled real-time data streaming to LabVIEW Host via PCIe DLLs (C/C++, Windows DLLs).
+    \item \textbf{Direction Finding (DF):} Developed RTL (Verilog, VHDL) and firmware (C) for a five-channel, high-speed ADC system (500 MHz IQ sample rate) on Zynq Ultrascale+ for direction finding. Implemented phase alignment, DDC-based downsampling, and real-time data streaming to host PC via PS-Ethernet. Utilized MUSIC and Correlative Interferometry algorithms (LabVIEW, C) for direction estimation.
+    \item \textbf{Digital Down Converter (DDC):} Designed and implemented a fixed DDC on LabVIEW FPGA for NI USRP TwinRX, achieving 400x downsampling and 80 dB out-of-band attenuation using three-stage poly-phase filters and DDS-based frequency shifting. Enabled phase synchronization for multi-channel TwinRX setups.
+  \item \textbf{Additional Contributions:} Board bring-up and peripheral driver development (Verilog, VHDL, C); Applications for Xilinx interfaces (DMA, AXI, MIG, DDR, SERDES, PCIe, 10G Ethernet, Aurora, JESD204B); Application for Xilinx Ultrascale+ RFSoC with phase synchronize ADC and DAC; Real-time data synchronization between PL and Multicore PS; performed system-level optimization for SFDR and sensitivity; supported lab testing with oscilloscopes, spectrum analyzers, and signal generators.
+  \end{itemize}
+  }
+  {C, C++, Xilinx Vivado, Verilog HDL, VHDL, RTL, RFSoC, Zynq Ultrascale+, SERDES, PCIe, Aurora, JESD204B, DSP, Ethernet Subsystem, Embedded C, RF, SDR, LabVIEW FPGA, Python, ARM}
+  \emptySeparator
+  
+  \experience
+  {July 2020}   {Hardware Design Engineer (Embedded)}{AKSA-SDS pvt ltd}{Pakistan}
+  {February 2021} {
+  \begin{itemize}
+  \item \textbf{Radio Frequency Front-End (RFFE):}  Parsed Ethernet-based communication from SDR to BeagleBone MCU (Python) relayed to Xilinx Spartan 6 using SPI and UART. Designed and implemented a control unit (Verilog/VHDL, Xilinx Spartan 6) for the RF front-end of a SDR to control RF chain (local oscillators, direct digital synthesizers, ADCs, DACs, digital alternators, and amplifiers).
+  \item \textbf{Standby Flight Information Display Unit (SFIDU):} Optimized memory resources and user experience for a standby altitude meter for aircraft emergency use. The system consisted of a Zynq 7000 SoC FPGA coupled with STM32, providing reliable backup flight information.
+\item \textbf{Additional Contributions:} Developed a custom PetaLinux build for Xilinx SoC; implemented BPSK and MSK modulation/demodulation models in MATLAB; performed hands-on lab testing with oscilloscopes, spectrum analyzers, and signal generators.
+  \end{itemize}
+  }
+  {C, C++, Xilinx ISE, Xilinx Vivado, Verilog HDL, VHDL, RTL, Python, Petalinux, SDR, ARM, STM32}
+  \emptySeparator
+  
+  %  \experience
+  %   {Present}   {Embedded Design Freelancer}{Fiverr}{}
+  %   {April 2020} {
+  %   \begin{itemize}
+  %       \item Formulated Verilog, VHDL, Assembly(RISC-V, MIPS, ARM) design's
+  %       \item Hands on Experience on Quartus, Xilinx ISE, Xilinx vivado, Lattice Diamond, Lattice ICEcube2 IDE's
+  %       \item Hands on Experience on Modelsim, ActiveHDL, Icarus Verilog, GHDL, EDA playground, GTK wave simulator IDE's
+  %   \end{itemize}
+  %   }
+  %   {Xilinx ISE, Verilog HDL, VHDL, RISC-V, MIPS, ARM}
+  % \emptySeparator
+    \experience
+    {September 2019}   {Research And Development Intern}{Real-time Intelligent Secure Computing (RISC) Research Lab}{Pakistan}
+    {February 2020} {
+    \begin{itemize}
+        \item Theory of RISC-V ISA
+        \item Key concepts of Verilog HDL
+        \item Hands on experience on Intel Quartus II , QSYS and ModelSim
+        \item Implementation of five stage pipelined RV32I on logisim
+        \item Implementation of five stage pipelined RV32I in Verilog HDL and tested it on altera DE-1 board
+        \item Floating point extension in RV32I 
+        \item GNU cross compiler support for RV32IF
+        \item JTAG UART support for RV32IF                                                      
+    \end{itemize}
+    }
+    {RISC V, Verilog HDL, Quartus, Modelsim, Logisim, Assembly, C, C++, Python}
+  \emptySeparator
+  
+  %   \experience
+  %   {September 2019}   {Research And Development Intern}{System Analysis and Verification (SAVe) Lab}{Pakistan}
+  %   {February 2020} {
+  %   \begin{itemize}
+  %       \item Theory of peer to peer networks
+  %       \item Theory of WiFi-Direct
+  %       \item Development of Android application using Android Studio to create a WiFi direct network and establish communication between devices.
+  %       \item Development of Ad-hoc network on Raspberry Pi 3 B+
+  %       \item Socket programming in python
+  %       \item Development of full stack desktop application in JAVA to communicate with the devices.
+  %       \item Indoor localization of devices using RSSI                                              
+  %   \end{itemize}
+  %   }
+  %   {P2P Networks, WiFi Direct, Android Studio, Raspberry Pi, JAVA, Python}
+  % \emptySeparator
+  
+  %    \experience
+  %   {July 2018}   {Research And Development Intern}{Electronic System and Design Automation Center (ESDA) Lab}{Pakistan}
+  %   {August 2018} {
+  %   \begin{itemize}
+  %       \item Theory of Internet of Things (IoT)
+  %       \item  Experience on Arduino IDE using Arduino Uno and Arduino Mega
+  %       \item  Integration of water level sensors with NodeMcu
+  %       \item TCP/UDP Socket programming on NodeMcu
+  %       \item Data analysis and manipulation of data to compute the water-level and its flow rate using python numpy
+  %       \item Integration of mobile application build using Android Studio with NodeMcu
+  %       \item Integration of actuators such as motors and buzzers with NodeMcu          
+  %   \end{itemize}
+  %   }
+  %   {IoT , Arduino, NodeMcu, Python}
+  % \emptySeparator
+  
+\end{experiences}

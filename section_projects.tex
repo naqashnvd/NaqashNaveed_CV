@@ -1,0 +1,55 @@
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%Section: Project
+\sectionTitle{Work Projects}{\faLaptop}
+
+\begin{projects}
+  
+	\project
+	{Signal Monitoring}{}
+	{{} {}{} }
+	{The aim of this project was to design a custom hardware board that uses High Speed ADC and Xilinx Zynq Ultrascale+ combined with Local Oscillator's and a RF front-end to detect the signals over the air. Rf front-end that we designed was a two stage superheterodyne receiver optimized for an SFDR upto 70 db. The product consists of 30 MHz to 6 GHz sweep by programming the local oscillators and configuring the RF front-end with high speed, to get real-time spectrum analyzer that can detect hopping with a time resolution of up to 1 us with bandwidth of 500 MHz. it also includes Persistence, Peak hold, Waterfall and eight channel channelizers to analyze the signal of interest. Real time data was streamed between our custom board having Xilinx Zynq Ultrascale+ to LabVIEW Host application using DLL's through PCIe.}
+	{ADC, Xilinx Zynq Ultrascale+, PCIe, RTSA ,FFT ,DDC, local Oscillator's , RF front-end}
+	
+  \emptySeparator
+	\project
+	{Direction Finding (DF)}{}
+	{{} {}{} }
+	{The aim of this project was to design a custom hardware board that consists of high-speed ADC's and Xilinx Zynq Ultrascale+ coupled with RF front-end that can detect the hopping using Fast Fourier Transform (FFT) of the incoming signals on a band configurable by DDC. My part in this project was to develop the design i.e. RTL and firmware for five channel high speed ADC's with IQ sample rate of 500 MHz. The phase alignment was insured by the firmware between the five channels and data was down sampled using the DDC and streamed to Host PC using PS-Ethernet for now The direction was found using combination of MUSIC and Correlative Interferometry Algorithms.}
+	{ADC, Xilinx Zynq Ultrascale+, FFT, DDC, PS-Ethernet, LabVIEW Host}
+	
+  \emptySeparator
+
+  	\project
+	{Digital Down Converter (DDC)}{}
+	{{} {}{} }
+	{The aim of this project was to design a fix Digital Down Converter on LabVIEW FPGA for NI USRP TwinRX. This DDC was capable of down sampling of 400, with 80 db out of band attenuation. This DDC was designed using poly-phase filters. Three stage Poly-phase filters were designed using LabVIEW and implemented on LabVIEW FPGA using Xilinx IP's. Frequency shifting was achieved on LabVIEW fpga using Direct Digital Synthesizer (DDS). Moreover phase synchronization was implemented for two TwinRX}
+	{Filter Design, Poly-phase Filter, LabVIEW FPGA, NI USRP TwinRX, DDS}
+	
+  \emptySeparator
+  \project
+	{Radio Frequency Front-End (RFFE)}{}
+	{{} {}{} }
+	{The aim of this project was to design and implement a control unit for RF front-end of an SDR whose responsibility was to communicate with the SDR over Ethernet and control the necessary RF devices. We as a part of embedded team developed and implemented the custom register banks and protocols to configure Local oscillators , Direct Digital Synthesizer, ADC's, DAC's, Digital Alternators and Amplifiers as necessary.}
+	{Xilinx ISE, Xilinx Spartan 6, Beagle Bone, RF}
+
+\emptySeparator
+  
+	\project
+	{Standby Flight Information Display Unit (SFIDU)}{}
+	{{} {}{} }
+	{The aim of this project is to provide a standby altitude meter for air crafts in case of emergency. I optimized the memory resources of Zynq 7000 SOC and user experience. SFIDU consists of Zynq 7000 SOC series FPGA coupled with STM32.}
+	{Xilinx Vivado, Zynq 7000}
+	
+\emptySeparator
+ 
+\end{projects}
